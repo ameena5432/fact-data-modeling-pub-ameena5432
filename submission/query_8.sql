@@ -28,13 +28,13 @@ INSERT INTO host_activity_reduced
 -- Define a CTE (Common Table Expression) named 'yesterday' to select data from the previous day
 WITH yesterday AS (
     SELECT *
-    FROM ameena543246192.host_activity_reduced
+    FROM host_activity_reduced
     WHERE month_start = '2023-08-01'  -- Select records where the month_start is August 1, 2023
 ),
 -- Define another CTE named 'today' to select data from the current day
 today AS (
     SELECT *
-    FROM ameena543246912.daily_web_metrics
+    FROM daily_web_metrics
     WHERE month_start = '2023-08-02'  -- Select records where the month_start is August 2, 2023
 )
 -- Perform the main query to merge data from 'yesterday' and 'today'

@@ -5,7 +5,7 @@
 
 
 -- Query to incrementally load data into user_devices_cumulated one day at a time for one entire week
-INSERT INTO ameena543246912.user_devices_cumulated
+INSERT INTO user_devices_cumulated
 // CTE to fetch data for yesterday's user information for each browser type
 with yesterday as
 (
@@ -13,7 +13,7 @@ with yesterday as
     browser_type,
     dates_active,
     date
-    FROM ameena543246912.user_devices_cumulated
+    FROM user_devices_cumulated
     WHERE DATE(date) = DATE('2023-01-06')
 ),
 today as

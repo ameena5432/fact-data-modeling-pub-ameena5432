@@ -10,7 +10,7 @@ date date
 
  */
 -- Create or replace the table 'hosts_cumulated' in the schema 'ameena543246912'
-CREATE OR REPLACE TABLE ameena543246912.hosts_cumulated
+CREATE OR REPLACE TABLE hosts_cumulated
 (
     host VARCHAR,  -- Define a column 'host' with VARCHAR data type to store host names
     host_activity_datelist ARRAY(date),  -- Define a column 'host_activity_datelist' to store an array of dates

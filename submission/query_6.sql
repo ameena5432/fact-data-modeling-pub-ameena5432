@@ -9,12 +9,12 @@ Write a query to incrementally populate the hosts_cumulated table from the web_e
 */
 
 -- Insert new data into the 'hosts_cumulated' table
-INSERT INTO ameena543246912.hosts_cumulated
+INSERT INTO hosts_cumulated
 -- Define a CTE (Common Table Expression) named 'yesterday' to select data from the previous day
 WITH yesterday AS 
 (
     SELECT *
-    FROM ameena543246912.hosts_cumulated
+    FROM hosts_cumulated
     WHERE date = DATE('2022-12-31')  -- Select records where the date is December 31, 2022
 ),
 
