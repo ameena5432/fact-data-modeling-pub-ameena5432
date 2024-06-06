@@ -21,6 +21,6 @@ CREATE TABLE host_activity_reduced
 WITH
 (
     partitioning = ARRAY['metric_name', 'month_start']  -- Specify partitioning on the 'metric_name' and 'month_start' columns to optimize query performance
-);
+)
 
 
