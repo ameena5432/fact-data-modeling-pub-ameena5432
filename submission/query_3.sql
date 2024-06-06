@@ -6,7 +6,6 @@
 
 -- Query to incrementally load data into user_devices_cumulated one day at a time for one entire week
 INSERT INTO user_devices_cumulated
-// CTE to fetch data for yesterday's user information for each browser type
 with yesterday as
 (
     SELECT user_id,
@@ -17,8 +16,6 @@ with yesterday as
     WHERE DATE(date) = DATE('2023-01-06')
 ),
 today as
-// CTE to fetch data for today's user information for each browser type for web_events table
-
 (
     SELECT user_id , browser_type,
     DATE(event_time) as event_date,count(1)
