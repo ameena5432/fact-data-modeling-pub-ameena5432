@@ -12,7 +12,7 @@ with yesterday as
     browser_type,
     dates_active,
     date
-    FROM user_devices_cumulated
+    FROM ameena543246912.user_devices_cumulated
     WHERE DATE(date) = DATE('2023-01-06')
 ),
 today as
