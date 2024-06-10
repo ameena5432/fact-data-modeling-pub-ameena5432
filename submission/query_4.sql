@@ -6,7 +6,7 @@
 WITH today as
 (
   SELECT *
-  FROM user_devices_cumulated
+  FROM ameena543246912.user_devices_cumulated
   WHERE DATE = DATE('2023-01-07')
 ),
 -- Define another CTE named 'date_list_int' to calculate an integer representation of user activity history
