@@ -5,7 +5,7 @@
 
 
 -- Query to incrementally load data into user_devices_cumulated one day at a time for one entire week
-INSERT INTO user_devices_cumulated
+INSERT INTO ameena543246912.user_devices_cumulated
 with yesterday as
 (
     SELECT user_id,
