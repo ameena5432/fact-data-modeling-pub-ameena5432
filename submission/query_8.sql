@@ -34,7 +34,7 @@ WITH yesterday AS (
 -- Define another CTE named 'today' to select data from the current day
 today AS (
     SELECT *
-    FROM daily_web_metrics
+    FROM ameena543246912.daily_web_metrics
     WHERE month_start = '2023-08-02'  -- Select records where the month_start is August 2, 2023
 )
 -- Perform the main query to merge data from 'yesterday' and 'today'
