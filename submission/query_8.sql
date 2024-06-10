@@ -35,7 +35,7 @@ WITH yesterday AS (
 today AS (
     SELECT *
     FROM ameena543246912.daily_web_metrics
-    WHERE date = '2023-08-02'  -- Select records where the month_start is August 2, 2023
+    WHERE date = DATE('2023-08-02')  -- Select records where the month_start is August 2, 2023
 )
 -- Perform the main query to merge data from 'yesterday' and 'today'
 SELECT 
